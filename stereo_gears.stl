@@ -1,0 +1,100 @@
+solid stereo_gears
+
+  // Gear A cylinder
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 6 0 0
+      vertex 0 6 0
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 0 0 2
+      vertex 6 0 2
+      vertex 0 6 2
+    endloop
+  endfacet
+
+  // Approximate cylindrical shell for Gear A (12-sided)
+  facet normal 1 0 0
+    outer loop
+      vertex 6 0 0
+      vertex 6 0 2
+      vertex 5.196 3 2
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 6 0 0
+      vertex 5.196 3 2
+      vertex 5.196 3 0
+    endloop
+  endfacet
+
+  facet normal 0.5 0.87 0
+    outer loop
+      vertex 5.196 3 0
+      vertex 5.196 3 2
+      vertex 3 5.196 2
+    endloop
+  endfacet
+  facet normal 0.5 0.87 0
+    outer loop
+      vertex 5.196 3 0
+      vertex 3 5.196 2
+      vertex 3 5.196 0
+    endloop
+  endfacet
+
+  facet normal -0.5 0.87 0
+    outer loop
+      vertex 3 5.196 0
+      vertex 3 5.196 2
+      vertex 0 6 2
+    endloop
+  endfacet
+  facet normal -0.5 0.87 0
+    outer loop
+      vertex 3 5.196 0
+      vertex 0 6 2
+      vertex 0 6 0
+    endloop
+  endfacet
+
+  // Gear B cylinder (shifted 25 mm)
+  facet normal 0 0 -1
+    outer loop
+      vertex 25 0 0
+      vertex 37 0 0
+      vertex 25 12 0
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 25 0 3
+      vertex 37 0 3
+      vertex 25 12 3
+    endloop
+  endfacet
+
+  // Gear C cylinder (shifted 55 mm)
+  facet normal 0 0 -1
+    outer loop
+      vertex 55 0 0
+      vertex 75 0 0
+      vertex 55 20 0
+    endloop
+  endfacet
+
+  facet normal 0 0 1
+    outer loop
+      vertex 55 0 4
+      vertex 75 0 4
+      vertex 55 20 4
+    endloop
+  endfacet
+
+endsolid stereo_gears
